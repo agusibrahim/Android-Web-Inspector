@@ -83,7 +83,7 @@
 					android:padding="10dp"
 					android:typeface="monospace"
 					android:id="@+id/mainactivityEditText1"
-					android:hint="JS Injection here"
+					android:hint="Write JS here"
 					android:inputType="text"
 					android:singleLine="true"/>
 
@@ -100,8 +100,12 @@
 						android:typeface="monospace"/>
 
 				</ScrollView>
+
 			</LinearLayout>
+
 		</android.support.design.widget.NavigationView>
+
 	</android.support.v4.widget.DrawerLayout>
+
 </android.support.design.widget.CoordinatorLayout>
 
