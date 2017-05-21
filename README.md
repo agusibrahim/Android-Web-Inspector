@@ -1,6 +1,8 @@
 ## Android Web Inspector
 ![image](https://github.com/agusibrahim/Android-Web-Inspector/blob/master/art/JointPics_20170521_104538.PNG?raw=true)
 
+<a href='https://play.google.com/store/apps/details?id=ai.agusibrahim.xhrlog&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
 Terinspirasi dari Google Chrome DevTool, banyak faselitas Uji untuk pengembang yang disediakan. Di Android sendiri bisa kita lakukan inspeksi halaman dengan cara Remote melalui Wi-Fi atau melalui USB dengan ADB Protokol.
 Namun inspeksi melalui remote tersebut tentu saja dilakukan di PC/Laptop, tidak bisa standalone.
 Disini dijelaskan bagiaimana cara inspeksi halaman seperti Inspecting Element/DOM, XHR logger dan Network logger di WebView Android.
