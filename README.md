@@ -86,5 +86,5 @@ public void onPageFinished(WebView view, String url) {
 #### Bahaimana mengedit Element dari hasil klik?
 Jika JS diatas di Minify, terlihat ada fungsi global *ganti* dan *gantiparent*, jadi setiap Element dari hasil click bisa kita edit menggunakan kedua fungsi tersebut.
 
-## DOWNLOAD DEMO
--** asap **
+## DOWNLOAD
+https://play.google.com/store/apps/details?id=ai.agusibrahim.xhrlog
