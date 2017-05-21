@@ -1,3 +1,6 @@
+## Android Web Inspector
+![image](https://github.com/agusibrahim/Android-Web-Inspector/blob/master/art/JointPics_20170521_104538.PNG?raw=true)
+
 Terinspirasi dari Google Chrome DevTool, banyak faselitas Uji untuk pengembang yang disediakan. Di Android sendiri bisa kita lakukan inspeksi halaman dengan cara Remote melalui Wi-Fi atau melalui USB dengan ADB Protokol.
 Namun inspeksi melalui remote tersebut tentu saja dilakukan di PC/Laptop, tidak bisa standalone.
 Disini dijelaskan bagiaimana cara inspeksi halaman seperti Inspecting Element/DOM, XHR logger dan Network logger di WebView Android.
@@ -15,7 +18,7 @@ class MyJavaScriptInterface{
 		public void now(String content){
 			android.util.Log.d("xhr", content);
 		}
-	}
+}
 ``` 
 Tambahkan _MyJavaScriptInterface_ ke WebView
 ```java
@@ -42,11 +45,11 @@ Yap, dengan melakukan override pada fungsi XHR ini kita dapat melempar data yang
 Inject JS untuk Override XHR setiap halaman selesai dimuat, seperti ini
 ```java
 @Override
-				public void onPageFinished(WebView view, String url) {
+public void onPageFinished(WebView view, String url) {
     // xhr override
     view.loadUrl("javascript:function injek(){window.hasovrde=1;var e=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(ee,nn,aa){this.addEventListener('load',function(){$$.log(this.responseText, nn, JSON.stringify(arguments))}),e.apply(this,arguments)}};if(window.hasovrde!=1){injek();}");
     super.onPageFinished(view, url);
-				}
+}
 ``` 
 Diatas saya membuat fungsi *injek*, intinya agar script di inject sekali saja jika memang belum pernah melakukan inject JS diatas. Oya, script sengaja di Minify menggunakan layanan online http://refresh-sf.com/, atau kamu bisa meng-unminify disini http://unminify.com/
 ## Inspect Element
@@ -75,7 +78,7 @@ public void onPageFinished(WebView view, String url) {
     // xhr override
     view.loadUrl("javascript:function injek(){window.hasovrde=1;var e=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(ee,nn,aa){this.addEventListener('load',function(){$$.log(this.responseText, nn, JSON.stringify(arguments))}),e.apply(this,arguments)}};if(window.hasovrde!=1){injek();}");
     super.onPageFinished(view, url);
-				}
+}
 ```
 
 #### Bahaimana mengedit Element dari hasil klik?
