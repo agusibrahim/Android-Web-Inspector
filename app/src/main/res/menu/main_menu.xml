@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/goto_url"
+		android:title="Goto"
+		android:icon="@drawable/ic_chevron_right"
+		app:showAsAction="always|collapseActionView"
+		app:actionViewClass="android.support.v7.widget.SearchView"
+	/>
+	<item
+		android:id="@+id/menu_clear"
+		android:title="Clear"
+		android:icon="@drawable/ic_trash"
+		app:showAsAction="always"
+	/>
+	<item
+        android:id="@+id/menu_touchinspect"
+        android:title="Touch Inspector"/>
+    <item
+        android:id="@+id/menu_xhrlog"
+        android:title="XHR Logs"/>
+	<item
+        android:id="@+id/menu_netlog"
+        android:title="Network Logs"/>
+	<item
+        android:id="@+id/menu_exit"
+        android:title="Exit"/>
+</menu>

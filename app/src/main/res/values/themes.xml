@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- Application theme. -->
+   <style name="AppTheme" parent="AppTheme.Base">
+       <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+   </style>
+
+   <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+
+       <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+       <item name="colorPrimary">@color/colorPrimary</item>
+       <item name="colorAccent">@color/colorAccent</item>
+
+       <item name="android:textColorPrimary">@color/textColorPrimary</item>
+       <item name="android:textColorSecondary">@color/textColorSecondary</item>
+
+       <item name="colorControlNormal">@color/colorControlNormal</item>
+       <item name="colorControlActivated">@color/colorControlActivated</item>
+       <item name="colorControlHighlight">@color/colorControlHighlight</item>
+
+       <item name="android:windowNoTitle">true</item>
+       <item name="windowActionBar">false</item>  <!-- For 2.x version  -->
+
+       <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+
+       <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+   </style>
+
+   <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+       <item name="spinBars">true</item>
+       <item name="color">@color/icons</item>
+   </style>
+
+   <!-- Style for AlertDialogs -->
+   <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+       <item name="colorAccent">@color/colorAccent</item>
+       <item name="android:textColorPrimary">@color/textColorPrimary</item>
+       <item name="android:background">@color/rowBackground</item>
+   </style>
+
+</resources>

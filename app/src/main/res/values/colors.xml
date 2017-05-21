@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <color name="colorPrimaryDark">#00838F</color> <!-- [ CYAN - 800 ] -->
+   <color name="colorPrimary">#0097A7</color> <!-- [ CYAN - 700 ] -->
+   <color name="colorPrimaryLight">#B2EBF2</color> <!-- [ CYAN - 100 ] -->
+   <color name="colorAccent">#00838F</color> <!-- [ PINK - A400 ] -->
+
+   <color name="textColorPrimary">#212121</color>
+   <color name="textColorSecondary">#727272</color>
+
+   <color name="text">#FFFFFF</color>
+   <color name="icons">#FFFFFF</color>
+   <color name="divider">#B6B6B6</color>
+
+   <color name="colorControlNormal">@color/textColorSecondary</color>
+   <color name="colorControlActivated">@color/colorAccent</color>
+   <color name="colorControlHighlight">@color/divider</color>
+
+   <!--
+   <color name="colorButtonNormal">#19C1B2</color>
+   <color name="colorSwitchThumbNormal">#19C1B2</color>
+   <color name="navigationBarColor">@color/colorPrimaryDark</color>
+   -->
+
+   <color name="windowBackground">#C0C3C6</color>
+   <color name="lightBackground">#E0E0E0</color>
+   <color name="darkBackground">#424242</color>
+   <color name="drawerBackground">#FFfafafa</color>
+   <color name="rowBackground">#F2F2F2</color>
+
+</resources>

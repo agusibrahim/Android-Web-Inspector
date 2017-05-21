@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- Style for text in ListViews or RecyclerViews -->
+   <style name="TextPrimary"  parent="@android:style/TextAppearance.Medium">
+       <item name="android:textColor">@color/colorPrimaryDark</item>
+       <item name="android:textSize">15sp</item>
+       <item name="android:textStyle">bold</item>
+   </style>
+
+   <style name="TextMedium"  parent="@android:style/TextAppearance.Medium">
+       <item name="android:textColor">@color/textColorPrimary</item>
+       <item name="android:textSize">13sp</item>
+       <item name="android:textStyle">normal</item>
+   </style>
+
+   <style name="TextSmall"  parent="@android:style/TextAppearance.Small">
+       <item name="android:textColor">@color/textColorSecondary</item>
+       <item name="android:textSize">12sp</item>
+       <item name="android:textStyle">normal</item>
+   </style>
+
+   <!-- Style for Headers & Dividers -->
+   <style name="TextHeader"  parent="@android:style/TextAppearance.Medium">
+       <item name="android:textColor">@color/colorPrimaryDark</item>
+       <item name="android:textSize">14sp</item>
+       <item name="android:textStyle">bold</item>
+   </style>
+
+   <style name="HorizontalDivider">
+       <item name="android:layout_height">match_parent</item>
+       <item name="android:layout_width">1dp</item>
+       <item name="android:background">@color/divider</item>
+   </style>
+
+   <style name="VerticalDivider">
+       <item name="android:layout_height">1dp</item>
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:background">@color/divider</item>
+   </style>
+
+</resources>

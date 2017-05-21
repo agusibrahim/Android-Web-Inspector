@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/coordinatorLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:background="@color/windowBackground">
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<include
+			android:id="@+id/toolbar"
+			layout="@layout/toolbar"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<android.support.v4.widget.DrawerLayout
+		android:id="@+id/drawer_layout"
+		android:layout_below="@id/appBarLayout"
+		android:layout_width="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<WebView
+				android:id="@+id/webv"
+				app:layout_behavior="@string/appbar_scrolling_view_behavior"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:visibility="gone"/>
+
+			<include
+				android:id="@+id/homs"
+				layout="@layout/main"
+				android:visibility="visible"/>
+
+		</LinearLayout>
+
+		<android.support.design.widget.NavigationView
+			android:id="@+id/naView1"
+			android:fitsSystemWindows="false"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="start"
+			app:layout_scrollFlags="enterAlways"
+			android:background="@android:color/white">
+
+			<ListView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:id="@+id/mainactivityListView1"/>
+
+		</android.support.design.widget.NavigationView>
+
+		<android.support.design.widget.NavigationView
+			android:id="@+id/naView"
+			android:fitsSystemWindows="false"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="end"
+			app:layout_scrollFlags="enterAlways"
+			android:background="@android:color/white">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:background="@null"
+					android:padding="10dp"
+					android:typeface="monospace"
+					android:id="@+id/mainactivityEditText1"
+					android:hint="JS Injection here"
+					android:inputType="text"
+					android:singleLine="true"/>
+
+				<ScrollView
+					android:layout_height="match_parent"
+					android:layout_width="match_parent">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/loggr"
+						android:textIsSelectable="true"
+						android:padding="10dp"
+						android:typeface="monospace"/>
+
+				</ScrollView>
+			</LinearLayout>
+		</android.support.design.widget.NavigationView>
+	</android.support.v4.widget.DrawerLayout>
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Web Inspector"
+		android:typeface="monospace"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:textStyle="bold"
+		android:textColor="#4E4E4E"
+		android:id="@+id/mainTextView1"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="Agus Ibrahim 2017"
+		android:layout_alignParentBottom="true"
+		android:padding="5dp"
+		android:layout_centerHorizontal="true"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="Click &gt; on Toolbar to Input URL"
+		android:layout_below="@id/mainTextView1"
+		android:layout_marginTop="10dp"
+		android:padding="10dp"
+		android:layout_centerHorizontal="true"
+		android:textStyle="italic"/>
+
+</RelativeLayout>
+
