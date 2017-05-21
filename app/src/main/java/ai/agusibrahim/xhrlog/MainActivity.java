@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
 				@Override
 				public void onDrawerClosed(View p1) {
 					// saat drawer ditutup
-					setTitle(web.getTitle());
+					setTitle(web.getTitle().length()>1?web.getTitle():getResources().getString(R.string.app_name));
 					clearmenu.setVisible(false);
 				}
 				@Override
@@ -352,23 +352,6 @@ public class MainActivity extends AppCompatActivity {
 	}
 }
 /*
-function injek2() {
-    window.dummy1 = 1;
-    document.addEventListener('click', function(e) {
-        if (1 == window.touchblock) {
-            e.preventDefault();
-            var t = document.elementFromPoint(e.clientX, e.clientY);
-			window.ganti=function(s){
-				t.outerHTML=s;
-			}
-            $$.print(t.outerHTML)
-        }
-    }, !0);
-};
-if (window.dummy1 != 1) {
-    injek2();
-}
-
 function injek3() {
     window.hasdir = 1;
     window.dir = function(n) {
@@ -379,5 +362,34 @@ function injek3() {
 };
 if (window.hasdir != 1) {
     injek3();
+}
+
+function injek2() {
+    window.touchblock = 0, window.dummy1 = 1, document.addEventListener('click', function(n) {
+        if (1 == window.touchblock) {
+            n.preventDefault();
+            n.stopPropagation();
+            var t = document.elementFromPoint(n.clientX, n.clientY);
+            window.ganti = function(n) {
+                t.outerHTML = n
+            }, window.gantiparent = function(n) {
+                t.parentElement.outerHTML = n
+            }, $$.print(t.parentElement.outerHTML, t.outerHTML)
+        }
+    }, !0)
+}
+1 != window.dummy1 && injek2();
+
+function injek() {
+    window.hasovrde = 1;
+    var e = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(ee, nn, aa) {
+        this.addEventListener('load', function() {
+            $$.log(this.responseText, nn, JSON.stringify(arguments))
+        }), e.apply(this, arguments)
+    }
+};
+if (window.hasovrde != 1) {
+    injek();
 }
 */
