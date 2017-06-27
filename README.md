@@ -1,6 +1,8 @@
 ## Android Web Inspector
 ![image](https://github.com/agusibrahim/Android-Web-Inspector/blob/master/art/JointPics_20170521_104538.PNG?raw=true)
 
+[DOWNLOAD APK](https://github.com/agusibrahim/Android-Web-Inspector/blob/master/WebInspector_ai.apk)
+
 <a href='https://play.google.com/store/apps/details?id=ai.agusibrahim.xhrlog&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 
 Terinspirasi dari Google Chrome DevTool, banyak faselitas Uji untuk pengembang yang disediakan. Di Android sendiri bisa kita lakukan inspeksi halaman dengan cara Remote melalui Wi-Fi atau melalui USB dengan ADB Protokol.
@@ -70,7 +72,8 @@ document.addEventListener('click', function(e) {
 }, true);
 ```
 
-Fungsi JS diatas yaitu untuk mendapatkan Element dari setiap yang kita Klik/Tap dalam halaman web. Dengan *preventDefault* serta  *stopPropagation* membuat fungsi default klik di nonaktifkan, misalnya klik di sebuah link maka kita tidak diarahkan ke link tersebut.
+Fungsi JS diatas yaitu untuk mendapatkan Element dari setiap yang
+kita Klik/Tap dalam halaman web. Dengan *preventDefault* serta  *stopPropagation* membuat fungsi default klik di nonaktifkan, misalnya klik di sebuah link maka kita tidak diarahkan ke link tersebut.
 Seperti biasa, inject JS diatas saat laman selesai dimuat. Seperti ini:
 ```javascript
 @Override
